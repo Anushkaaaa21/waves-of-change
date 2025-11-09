@@ -18,7 +18,7 @@ export const AuthProvider = ({ children }) => {
         try {
           // You might have a backend endpoint like /api/auth/me to get user info
           // using the token, which also implicitly validates the token.
-          const response = await fetch('/api/auth/me', {
+          const response = await fetch('https://waves-of-change-backend.onrender.com/api/auth/me', {
             headers: {
               'x-auth-token': token
             }
@@ -63,7 +63,7 @@ export const AuthProvider = ({ children }) => {
 
   const login = async (email, password) => {
     try {
-      const response = await fetch('/api/auth/login', { // Your backend login endpoint
+      const response = await fetch('https://waves-of-change-backend.onrender.com/api/auth/login', { // Your backend login endpoint
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password }),

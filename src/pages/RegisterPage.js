@@ -6,7 +6,7 @@ const registerUser = async (userData) => {
   try {
     // Make sure your backend server is running on http://localhost:5000
     // And that it has a POST route at /api/auth/register
-    const res = await axios.post('http://localhost:5000/api/auth/register', userData);
+    const res = await axios.post('http://waves-of-change-backend.onrender.com/api/auth/register', userData);
     console.log('Backend response:', res.data);
     return res.data; // Return data if needed
   } catch (err) {
