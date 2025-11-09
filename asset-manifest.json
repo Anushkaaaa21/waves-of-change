@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/waves-of-change/static/css/main.1a02918e.css",
+    "main.js": "/waves-of-change/static/js/main.d190c497.js",
+    "index.html": "/waves-of-change/index.html",
+    "main.1a02918e.css.map": "/waves-of-change/static/css/main.1a02918e.css.map",
+    "main.d190c497.js.map": "/waves-of-change/static/js/main.d190c497.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1a02918e.css",
+    "static/js/main.d190c497.js"
+  ]
+}
