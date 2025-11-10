@@ -2,11 +2,12 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 // Function to send registration data to the backend
+const API_BASE_URL = process.env.REACT_APP_BACKEND_URL || 'http://localhost:5000';
 const registerUser = async (userData) => {
   try {
     // Make sure your backend server is running on http://localhost:5000
     // And that it has a POST route at /api/auth/register
-    const res = await axios.post('http://localhost:5000/api/auth/register', userData);
+    const res = await axios.post('https://waves-of-change-backend.onrender.com/auth/register', userData);
     console.log('Backend response:', res.data);
     return res.data; // Return data if needed
   } catch (err) {

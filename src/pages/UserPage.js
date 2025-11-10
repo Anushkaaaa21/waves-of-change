@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios'; // For making HTTP requests to your backend
 
+
 const UserPage = () => {
   // State to hold user profile data fetched from the backend
   const [userProfile, setUserProfile] = useState(null);
@@ -58,7 +59,7 @@ const UserPage = () => {
       try {
         setLoading(true);
         setMessage(''); // Clear previous messages
-        const response = await axios.get('http://localhost:5000/api/profile/me', {
+        const response = await axios.get('https://waves-of-change-backend.onrender.com/profile/me', {
           headers: {
             'x-auth-token': token
           }
@@ -122,7 +123,7 @@ const UserPage = () => {
     try {
       setLoading(true);
       setMessage('');
-      const response = await axios.put('http://localhost:5000/api/profile/me', formData, {
+      const response = await axios.put('https://waves-of-change-backend.onrender.com/profile/me', formData, {
         headers: {
           'x-auth-token': token,
           'Content-Type': 'application/json'

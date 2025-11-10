@@ -49,8 +49,7 @@ const DonationsPage = () => {
       }
 
       // Make the API call to your backend
-      const res = await axios.post(
-        'http://localhost:5000/api/donations', // <-- YOUR BACKEND ENDPOINT
+      const res = await axios.post('https://waves-of-change-backend.onrender.com/donations', // <-- YOUR BACKEND ENDPOINT
         { amount: amount, currency: 'USD' }, // <-- DATA TO SEND (adjust currency if needed)
         config // <-- INCLUDE HEADERS WITH TOKEN
       );

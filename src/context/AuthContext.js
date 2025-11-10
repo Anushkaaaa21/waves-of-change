@@ -3,8 +3,9 @@ import React, { createContext, useContext, useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const AuthContext = createContext(null);
+const API_BASE_URL = process.env.REACT_APP_BACKEND_URL || 'http://localhost:5000';
 
-export const AuthProvider = ({ children }) => {
+export const AuthProvider = ({ children }) => {cd
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);

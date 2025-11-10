@@ -3,6 +3,8 @@ import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { useAuth } from '../context/AuthContext'; // <--- Import useAuth from AuthContext
 
+const API_BASE_URL = process.env.REACT_APP_BACKEND_URL || 'http://localhost:5000';
+
 // REMOVE ALL THESE INCORRECT IMPORTS! They belong in App.js, not LoginPage.js
 // import Navbar from './components/NavBar';
 // import HomePage from './pages/HomePage';

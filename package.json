@@ -18,9 +18,10 @@
   },
   "scripts": {
     "start": "react-scripts start",
+     "build": "REACT_APP_BACKEND_URL=https://waves-of-change-backend.onrender.com/ react-scripts build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "build": "react-scripts build",
+ 
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

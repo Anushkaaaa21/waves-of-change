@@ -16,7 +16,7 @@ const port = process.env.PORT || 5000;
 // Enable CORS for all routes - allows your frontend on a different port/domain to make requests
 // IMPORTANT: In production, consider restricting this to your specific frontend domain.
 app.use(cors({
-    origin: ['http://localhost:3000', 'http://localhost:3001'],// Allow only your frontend's origin during development
+    origin: ['http://localhost:3000', 'http://localhost:3001', ' https://anushkaaaa21.github.io/waves-of-change/'],// Allow only your frontend's origin during development
     credentials: true, // Allow sending cookies/auth headers
 }));
 
